@@ -1,0 +1,311 @@
+@import url(normalize.css);
+@import url(components/fonts.css);
+@import url(components/header.css);
+@import url(components/base.css);
+@import url(components/footer.css);
+
+/*Section HERO==================================================*/
+.section-hero {
+	position: relative;
+	display: flex;
+	width: 100%;
+}
+.section-hero-background {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -2;
+	width: 100%;
+	height: 100%;
+	background: url(../images/hero-bg.png);
+	background-size: cover;
+}
+.container {
+	padding: 0 5vh;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+}
+.hero-foreground {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: #fff;
+	width: 100%;
+	height: 100%;
+}
+.hero-content {
+	padding-left: 30px;
+}
+.hero-title-h1 {
+	font-size: 2.4rem;
+	font-weight: 300;
+	text-align: center;
+	margin-bottom: 3rem;
+}
+.hero-text-wrap {
+	margin-bottom: 4rem;
+}
+.hero-text {
+	font-size: 2rem;
+	text-align: center;
+}
+.hero-img-wrap {
+	width: 100%;
+	margin-bottom: 2rem;
+}
+.hero-img {
+	width: 100%;
+}
+.button {
+	display: inline-block;
+	padding: 12px 20px;
+	background-color: #5094f2;
+	text-decoration: none;
+	margin-bottom: 20px
+}
+.button-title {
+	font-family: 'Open Sans';
+	color: #fff;
+	font-size: 1.8rem;
+}
+
+.button:hover {
+	background-color: #6c6c6c;
+}
+.icon-Chekbox::before {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 2rem;
+	margin-right: 10px;
+}
+
+.swiper-button-prev, .swiper-button-next {
+	display: none;
+}
+/*Section====================================================*/
+.cards {
+	display: flex;
+	flex-flow: column nowrap;
+	font-size: 0;
+}
+.card-item-wrap {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.card-item {
+	padding: 2rem 0;
+	position: relative;
+}
+.card-item::before {
+	display: block;
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: -5vw;
+	width: calc(100% + 10vw);
+	height: .1rem;
+	background-color: #ccc;
+}
+.card-img-wrap {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	min-width: 10rem;
+	height: 10rem;
+}
+.blue, .red, .yellow {
+	border-radius: 50%;
+}
+.blue {
+	background-color: #5094f2;
+}
+.red {
+	background-color: #d94748;
+}
+.yellow {
+	background-color: #ebbb11;
+}
+.icons-item {
+	position: absolute;
+	color: #fff;
+	font-size: 4rem;
+	z-index: 3;
+}
+.mobile-hidden {
+	display: none;
+}
+/*Section====================================================*/
+.section-shop-cart {
+	display: flex;
+	flex-flow: column nowrap;
+	width: 100%;
+	object-fit: cover;
+	padding: 4.8rem 0;
+}
+.column-left-shop-cart {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.text-shop-cart {
+	color: #999;
+	line-height: 2.8rem;
+}
+.shop-card-img-wrap {
+	position: relative;
+	overflow: hidden;
+	min-width: 21.5rem;
+	height: 100%;
+}
+.shop-card-img-wrap::before {
+	content: '';
+	display: block;
+	padding-bottom: 100%;
+}
+.shop-card-img {
+	position: absolute;
+	min-width: 30rem;
+	max-width: none;
+	height: auto;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	min-width: 100%;
+	max-height: 100%;
+}
+/*===================================================================*/
+@media (min-width: 576px) {
+.hero-foreground {
+	flex-flow: row nowrap;
+	justify-content: space-between;
+}
+.hero-content {
+	padding-left: 60px;
+}
+.hero-title-h1, .hero-text {
+	text-align: left;
+}
+.button-title {
+	font-size: 2.2rem;
+}
+.hero-title-h1 {
+	font-size: 3.2rem;
+	font-weight: 300;
+}
+.hero-text {
+	font-size: 2.2rem;
+}
+.card-item-wrap {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.card-img-wrap {
+	min-width: 13.6rem;
+	height: 13.6rem;
+	margin-right: 3rem;
+}
+.icons-item {
+	font-size: 7rem;
+}
+.card-discription {
+	width: calc(100% - 20.1rem);
+}
+.column-left-shop-cart {
+	flex-direction: column;
+	width: 100%;
+}
+.shop-card-img-wrap {
+	min-width: 21.5rem;
+	height: 100%;
+}
+/*===================================================================*/
+@media (min-width: 992px) {
+.container {
+	width: 97.6rem;
+	padding: 0;
+}
+.mobile-hidden {
+	display: block;
+}
+.hero-bg-down {
+	display: block;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: .8rem;
+	background: url(../images/teeth.png);
+}
+.swiper-button-prev, .swiper-button-next {
+	display: block;
+	width: 5rem;
+	height: 12.6rem;
+}
+.swiper-button-next {
+	background-image: url(../images/arrow-right.png);
+	right: -1rem;
+}
+.swiper-button-prev {
+	background-image: url(../images/arrow-left.png);
+	left: -1rem;
+}
+.hero-content {
+	padding-left: 100px;
+}
+.section-cards {
+	padding: 7.3rem 0;
+}
+.cards {
+	flex-flow: row wrap;
+	justify-content: space-between;
+	margin: 0 -3rem;
+}
+.card-item {
+	padding: 2rem 3rem;
+}
+.card-item::before {
+	display: none;
+}
+.card-item-wrap {
+	flex-direction: column;
+}
+.card-discription {
+	width: 100%;
+}
+.card-img-wrap {
+	min-width: 18.6rem;
+	height: 18.6rem;
+	margin-bottom: 28px;
+}
+.icons-item {
+	font-size: 9rem;
+}
+.card-discription {
+	text-align: center;
+}
+.column-left-shop-cart {
+	flex-direction: column;
+	width: 40%;
+}
+.shop-cart-wrap {
+	display: flex;
+	justify-content: space-between;
+}
+
+.shop-card-img-wrap {
+	min-width: 37.1rem;
+	height: auto;
+	object-fit: cover;
+}
+.column-right {
+	padding-top: 3rem;
+}
+}
+	
